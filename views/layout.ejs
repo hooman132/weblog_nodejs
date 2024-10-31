@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pagetitle %></title>
+    <% if (path === "/login" || path === "/register") { %>
+    <link rel="stylesheet" href="/css/login.css" />
+    <% } %>
+    <link rel="stylesheet" href="/css/bootstrap-rtl.css" />
+    <link rel="stylesheet" href="/css/font-awesome.css" />
+  </head>
+  <body>
+    <%- include('./includes/navbar.ejs') %> <%- body %>
+    <!-- محتوای اصلی -->
+    <% if (path === "/login" || path === "/register") { %>
+    <script src="/js/eyebtnpass.js"></script>
+    <% } %>
+    <script src="/jquery.slim.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

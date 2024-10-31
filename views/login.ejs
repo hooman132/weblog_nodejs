@@ -1,0 +1,30 @@
+<form class="form-signin" action="/users/login" method="post">
+  <h1 class="h3 mb-3 font-weight-normal">لطفا وارد شوید</h1>
+  <%- include('./includes/massagelogin.ejs') %>
+  <label for="inputEmail" class="sr-only">ایمیل</label>
+  <input
+    name="email"
+    type="email"
+    id="inputEmail"
+    class="form-control"
+    placeholder="ایمیل"
+    required
+    autofocus
+  />
+  <label for="inputPassword" class="sr-only">رمز عبور</label>
+  <input
+    name="password"
+    type="password"
+    id="inputPassword"
+    class="form-control"
+    placeholder="رمز عبور"
+    required
+  />
+  <div class="checkbox mb-3">
+    <label>
+      <input type="checkbox" name="remember" value="remember-me" />مرا به خاطر
+      بسپار</label
+    >
+  </div>
+  <button class="btn btn-lg btn-primary btn-block" type="submit">وورد</button>
+</form>
